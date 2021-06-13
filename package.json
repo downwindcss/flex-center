@@ -1,6 +1,6 @@
 {
 	"name": "@downwindcss/flex-center",
-	"version": "0.0.2-alpha.0",
+	"version": "1.0.0",
 	"license": "MIT",
 	"author": "dance2die",
 	"module": "dist/flex-center.esm.js",
