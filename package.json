@@ -1,15 +1,12 @@
 {
 	"name": "@downwindcss/flex-center",
-	"version": "0.1.0",
+	"version": "0.0.1",
 	"license": "MIT",
 	"author": "dance2die",
 	"module": "dist/flex-center.esm.js",
 	"main": "dist/index.js",
 	"typings": "dist/index.d.ts",
-	"files": [
-		"dist",
-		"src"
-	],
+	"files": [ "dist", "src" ],
 	"engines": {
 		"node": ">=10"
 	},
@@ -20,7 +17,14 @@
 		"lint": "tsdx lint",
 		"prepare": "tsdx build",
 		"size": "size-limit",
-		"analyze": "size-limit --why"
+		"analyze": "size-limit --why",
+		"version:alpha": "pnpm version prerelease --preid=alpha",
+		"publish:alpha": "pnpm publish --tag alpha",
+		"version:beta": "pnpm version prerelease --preid=beta",
+		"publish:beta": "pnpm publish --tag beta"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"husky": {
 		"hooks": {
