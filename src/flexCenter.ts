@@ -7,10 +7,10 @@ function flexCenter({ addUtilities }: { addUtilities: any }) {
       'justify-content': 'center',
       'align-items': 'center',
     },
-  }
+  };
   // Same as 'flex': https://tailwindcss.com/docs/flex#variants
-  const variants = ['responsive']
-  addUtilities(flexCenterUtility, { variants })
+  const variants = ['responsive'];
+  addUtilities(flexCenterUtility, { variants });
 }
 
 export default plugin(flexCenter);

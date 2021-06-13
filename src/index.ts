@@ -1,3 +1,3 @@
-import flexCenter from './flexCenter'
+import flexCenter from './flexCenter';
 
 module.exports = flexCenter;
